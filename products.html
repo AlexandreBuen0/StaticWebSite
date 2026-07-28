@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products — Alexandre Bueno</title>
+<meta name="description" content="Stone-milled printing inks for letterpress, offset litho and relief printing. Specs, tack ratings and prices per kilogram.">
+<link rel="preload" href="assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a href="#main" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-warning text-dark">Skip to content</a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-ink sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Alexandre Bueno<span class="text-chrome">.</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="milling.html">Milling</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="container py-5">
+      <p class="eyebrow text-chrome mb-3">Current list &middot; July 2026</p>
+      <h1 class="display-4 mb-3">The inks</h1>
+      <p class="lead measure text-paper-85 mb-0">
+        Sold in 250&nbsp;g and 1&nbsp;kg tins. Tack is measured on our own inkometer at 1200&nbsp;rpm and 32&nbsp;&deg;C,
+        so compare it against our numbers rather than another maker's.
+      </p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+      <ul class="nav nav-pills gap-2" id="filters">
+        <li class="nav-item"><button class="nav-link active" type="button" data-filter="all" aria-pressed="true">All</button></li>
+        <li class="nav-item"><button class="nav-link" type="button" data-filter="letterpress" aria-pressed="false">Letterpress</button></li>
+        <li class="nav-item"><button class="nav-link" type="button" data-filter="litho" aria-pressed="false">Litho</button></li>
+        <li class="nav-item"><button class="nav-link" type="button" data-filter="relief" aria-pressed="false">Relief</button></li>
+        <li class="nav-item"><button class="nav-link" type="button" data-filter="base" aria-pressed="false">Mixing base</button></li>
+      </ul>
+      <span class="mono small text-secondary" id="count" role="status">6 inks shown</span>
+    </div>
+
+    <div class="row g-4" id="grid">
+      <div class="col-sm-6 col-lg-4" data-use="letterpress litho">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="swatch-top sw-prussian"><span class="idx">PB27</span></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-1">Prussian Deep</h2>
+            <p class="eyebrow text-secondary mb-3">Letterpress &middot; Litho</p>
+            <div class="spec-row"><span>Base</span><span>Raw linseed</span></div>
+            <div class="spec-row"><span>Tack</span><span>8.5</span></div>
+            <div class="spec-row"><span>Lightfastness</span><span>I</span></div>
+            <div class="spec-row"><span>Grind</span><span>7 &micro;m</span></div>
+            <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+              <span class="mono fw-medium">$86 <small class="text-secondary fw-normal">/kg</small></span>
+              <span class="badge rounded-pill text-bg-success-subtle text-success-emphasis">In stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-use="letterpress relief">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="swatch-top sw-madder"><span class="idx">PR83</span></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-1">Madder Lake</h2>
+            <p class="eyebrow text-secondary mb-3">Letterpress &middot; Relief</p>
+            <div class="spec-row"><span>Base</span><span>Boiled linseed</span></div>
+            <div class="spec-row"><span>Tack</span><span>7.0</span></div>
+            <div class="spec-row"><span>Lightfastness</span><span>II</span></div>
+            <div class="spec-row"><span>Grind</span><span>8 &micro;m</span></div>
+            <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+              <span class="mono fw-medium">$94 <small class="text-secondary fw-normal">/kg</small></span>
+              <span class="badge rounded-pill text-bg-warning-subtle text-warning-emphasis">2 tins left</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-use="letterpress litho relief">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="swatch-top sw-yellow"><span class="idx">PY74</span></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-1">Mill Yellow</h2>
+            <p class="eyebrow text-secondary mb-3">Letterpress &middot; Litho &middot; Relief</p>
+            <div class="spec-row"><span>Base</span><span>Raw linseed</span></div>
+            <div class="spec-row"><span>Tack</span><span>6.5</span></div>
+            <div class="spec-row"><span>Lightfastness</span><span>II</span></div>
+            <div class="spec-row"><span>Grind</span><span>6 &micro;m</span></div>
+            <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+              <span class="mono fw-medium">$72 <small class="text-secondary fw-normal">/kg</small></span>
+              <span class="badge rounded-pill text-bg-success-subtle text-success-emphasis">In stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-use="letterpress relief">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="swatch-top sw-verdigris"><span class="idx">PG7</span></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-1">Verdigris</h2>
+            <p class="eyebrow text-secondary mb-3">Letterpress &middot; Relief</p>
+            <div class="spec-row"><span>Base</span><span>Boiled linseed</span></div>
+            <div class="spec-row"><span>Tack</span><span>7.5</span></div>
+            <div class="spec-row"><span>Lightfastness</span><span>I</span></div>
+            <div class="spec-row"><span>Grind</span><span>7 &micro;m</span></div>
+            <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+              <span class="mono fw-medium">$88 <small class="text-secondary fw-normal">/kg</small></span>
+              <span class="badge rounded-pill text-bg-secondary-subtle text-secondary-emphasis">Back-ordered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-use="letterpress litho relief base">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="swatch-top sw-black"><span class="idx">PBk9</span></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-1">Bone Black</h2>
+            <p class="eyebrow text-secondary mb-3">All presses</p>
+            <div class="spec-row"><span>Base</span><span>Rubber-modified</span></div>
+            <div class="spec-row"><span>Tack</span><span>9.0</span></div>
+            <div class="spec-row"><span>Lightfastness</span><span>I</span></div>
+            <div class="spec-row"><span>Grind</span><span>5 &micro;m</span></div>
+            <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+              <span class="mono fw-medium">$64 <small class="text-secondary fw-normal">/kg</small></span>
+              <span class="badge rounded-pill text-bg-success-subtle text-success-emphasis">In stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-use="base letterpress">
+        <div class="card h-100 border-0 shadow-sm card-hover">
+          <div class="swatch-top sw-white"><span class="idx">PW4</span></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-1">Zinc White</h2>
+            <p class="eyebrow text-secondary mb-3">Mixing base &middot; Letterpress</p>
+            <div class="spec-row"><span>Base</span><span>Raw linseed</span></div>
+            <div class="spec-row"><span>Tack</span><span>5.5</span></div>
+            <div class="spec-row"><span>Lightfastness</span><span>I</span></div>
+            <div class="spec-row"><span>Grind</span><span>8 &micro;m</span></div>
+            <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+              <span class="mono fw-medium">$58 <small class="text-secondary fw-normal">/kg</small></span>
+              <span class="badge rounded-pill text-bg-success-subtle text-success-emphasis">In stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container pb-5">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h2 class="h1 mb-4">Reading the specs</h2>
+        <div class="accordion accordion-flush" id="specs">
+          <div class="accordion-item bg-transparent">
+            <h3 class="accordion-header"><button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s1">Tack</button></h3>
+            <div id="s1" class="accordion-collapse collapse" data-bs-parent="#specs">
+              <div class="accordion-body text-secondary">How hard the ink pulls back at the roller. Low tack for soft, uncoated cotton; high tack for coated stock that will not absorb.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-transparent">
+            <h3 class="accordion-header"><button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s2">Grind</button></h3>
+            <div id="s2" class="accordion-collapse collapse" data-bs-parent="#specs">
+              <div class="accordion-body text-secondary">The largest particle left after the second pass. Under 8&nbsp;&micro;m holds a 6&nbsp;pt serif without filling in.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-transparent">
+            <h3 class="accordion-header"><button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s3">Lightfastness</button></h3>
+            <div id="s3" class="accordion-collapse collapse" data-bs-parent="#specs">
+              <div class="accordion-body text-secondary">Graded on the Blue Wool scale. Grade&nbsp;I holds for decades indoors; grade&nbsp;II will shift in a sunlit frame.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card border-0 shadow-sm bg-ink text-light h-100">
+          <div class="card-body p-4 d-flex flex-column">
+            <h3 class="h4">Sample card</h3>
+            <p class="text-paper-85 mb-4">Six inks printed on rag, coated and newsprint, with the tack and grind for each. Free, one per shop.</p>
+            <a href="contacts.html" class="btn btn-chrome mt-auto align-self-start">Request a card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-ink text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <p class="brand-face h5">Alexandre Bueno<span class="text-chrome">.</span></p>
+        <p class="small text-paper-70 mb-0">118 Water Street<br>Fall River, Massachusetts 02720</p>
+      </div>
+      <div class="col-md-4">
+        <p class="eyebrow text-chrome">Pages</p>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="milling.html">Milling</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="eyebrow text-chrome">Reach us</p>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="mailto:press@alexandrebueno.com">press@alexandrebueno.com</a></li>
+          <li><a href="tel:+15085550143">(508) 555-0143</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="mono small text-paper-55 mb-0">Prices are per kilogram, before shipping. Tins are returnable for a $4 credit.</p>
+  </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
