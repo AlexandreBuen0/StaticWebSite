@@ -1,16 +1,21 @@
 # Cloudflare Pages reads this file from the root of the build output.
 # https://developers.cloudflare.com/pages/configuration/headers/
 
+# ── Global ────────────────────────────────────────────────────────────────────
+# CSP must stay on ONE line — Pages does not support line continuations.
+# Third-party hosts: websitevisitorleads.com + app-dev.lettrlabs.com (lead-reveal pixel)
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://websitevisitorleads.com; style-src 'self'; img-src 'self' data: https://websitevisitorleads.com https://app-dev.lettrlabs.com; font-src 'self'; connect-src 'self' https://websitevisitorleads.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://websitevisitorleads.com https://app-dev.lettrlabs.com; style-src 'self'; img-src 'self' data: https://websitevisitorleads.com https://app-dev.lettrlabs.com; font-src 'self'; connect-src 'self' https://websitevisitorleads.com https://app-dev.lettrlabs.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
   Cross-Origin-Opener-Policy: same-origin
 
+# ── Static assets ─────────────────────────────────────────────────────────────
 # Fingerprint these filenames (bootstrap.min.abc123.css) before trusting the long max-age.
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# ── HTML ──────────────────────────────────────────────────────────────────────
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
