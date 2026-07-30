@@ -11,7 +11,7 @@
 #      without a trailing slash require an exact match)
 #     Beacon POSTs to /cdn-cgi/rum on this domain while proxied → covered by 'self'.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://websitevisitorleads.com https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev https://static.cloudflareinsights.com; style-src 'self'; img-src 'self' data: https://websitevisitorleads.com https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; font-src 'self'; connect-src 'self' https://websitevisitorleads.com https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev https://static.cloudflareinsights.com; style-src 'self'; img-src 'self' data: https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; font-src 'self'; connect-src 'self' https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
