@@ -10,8 +10,12 @@
 #     (host only, no path: the real URL is /beacon.min.js/v<hash> and CSP paths
 #      without a trailing slash require an exact match)
 #     Beacon POSTs to /cdn-cgi/rum on this domain while proxied → covered by 'self'.
+#   Inbound Insight downstream data-provider scripts (chained by vc_pixel_script.js):
+#     s3-us-west-2.amazonaws.com (jsstore ge.js), rdcdn.com (rtjs),
+#     data.processwebsitedata.com (cscripts) → the vendor's enrichment loaders;
+#     they both load as scripts and beacon back, so allow-listed in script-src + connect-src.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev https://static.cloudflareinsights.com; style-src 'self'; img-src 'self' data: https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; font-src 'self'; connect-src 'self' https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev https://static.cloudflareinsights.com https://s3-us-west-2.amazonaws.com https://rdcdn.com https://data.processwebsitedata.com; style-src 'self'; img-src 'self' data: https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev; font-src 'self'; connect-src 'self' https://app-dev.lettrlabs.com https://pixel-controller-worker.inbound-insight.workers.dev https://s3-us-west-2.amazonaws.com https://rdcdn.com https://data.processwebsitedata.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
